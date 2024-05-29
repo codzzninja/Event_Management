@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Logout</title>
+</head>
+<body>
+    <header>
+        <h1>Event Management System</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <p>You are being logged out...</p>
+    </main>
+    <script>
+        // Clear local storage or session storage
+        localStorage.removeItem('user');
+        // Alternatively use: sessionStorage.removeItem('user');
+
+        // Redirect to login page after a delay
+        setTimeout(function() {
+            window.location.href = 'login.html';
+        }, 2000);
+    </script>
+    <footer>
+        <p>Thank you for using our Event Management System!</p>
+    </footer>
+</body>
+</html>

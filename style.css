@@ -1,0 +1,183 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ff33e0;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  /* Header and navigation styles */
+  header {
+    background-color: #ff69b4; /* Bright pink */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #ff1493; /* Deep pink */
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background: #ff69b4; /* Lighter pink for hover */
+  }
+  
+  /* Main layout styles */
+  main {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card styles for events and users */
+  .event-card, .user-registration, .admin-event {
+    background: white;
+    border: 1px solid #ffc0cb; /* Soft pink */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 20px auto;
+  }
+  .event-card h3, .user-registration h3, .admin-event h3 {
+    color: #ff1493; /* Pink for event title */
+    margin-bottom: 20px;
+  }
+
+  .event-box p, .admin-event p {
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  form input, form textarea, form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffb6c1; /* Light pink */
+  }
+  form button {
+    background-color: #ff1493; /* Deep pink */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  form button:hover {
+    background-color: #ff69b4; /* Lighter pink */
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ff1493; /* Consistent with nav background */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Utility classes */
+  .hidden {
+    display: none;
+  }
+ 
+  .search-event-input {
+    width: 450px; /* Set a fixed width for the input field */
+    height: 50px;
+    padding: 8px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Add border for clarity */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    /* Add any other necessary styling */
+  }
+
+  /* CSS */
+.register-button {
+    background-color: #ff1493; /* Deep pink */
+    color: white;
+    border: none;
+    width: 450px; /* Set a fixed width for the input field */
+    height: 50px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 18px;
+  }
+  
+  .register-button:hover {
+    background-color: #ff69b4; /* Lighter pink on hover */
+    transform: scale(1.05); /* Slightly scale up the button */
+  }
+  
+  /* Event details box styles */
+.event-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .event-details-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .event-details-box h2 {
+    color: #ff1493; /* Pink for event title */
+    margin-bottom: 20px;
+  }
+  .event-details-box p {
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
